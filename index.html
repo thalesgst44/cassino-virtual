@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassino Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cassino Virtual</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#jogos">Jogos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Bem-vindo ao Cassino Virtual</h2>
+            <p>Divirta-se com nossos jogos de cassino online e tenha a chance de ganhar prêmios incríveis!</p>
+        </section>
+        <section id="jogos">
+            <h2>Nossos Jogos</h2>
+            <article id="tigrinho">
+                <h3>Tigrinho</h3>
+                <button onclick="jogarTigrinho()">Jogar</button>
+                <div id="resultado-tigrinho"></div>
+            </article>
+            <article id="roleta-bac-boo">
+                <h3>Roleta Bac Boo</h3>
+                <button onclick="jogarRoletaBacBoo()">Jogar</button>
+                <div id="resultado-roleta-bac-boo"></div>
+            </article>
+        </section>
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos um cassino virtual comprometido em oferecer a melhor experiência de jogos online para nossos usuários.</p>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Cassino Virtual. Todos os direitos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
